@@ -244,7 +244,6 @@ header {
 
 /* 배너 영역 */
 .banner {
-  width: 100vw;
   height: 41.9vw;
   background: rgb(255, 255, 255);
   margin: 0 auto;
@@ -358,16 +357,15 @@ header {
 }
 
 .content_con {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  width: 87%;
+  margin: 0 auto;
   margin-top: 20px;
 }
 
 /* 소개 영역 */
 .info_content {
-  background: #c6e4ff;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .info_img_wrap {
@@ -412,6 +410,8 @@ header {
   background-image: url(../images/ex_back.png);
   background-size: 100%;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
 }
 
 .ex_box {
@@ -423,22 +423,21 @@ header {
 
 .ex_img_box {
   width: 100%;
-  /* background: gold; */
   height: 600px;
-  height: 35vw;
+  height: 29vw;
 }
 
 .ex_img_box > img {
-  width: 100%;
+  width: 80%;
   height: auto;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* 관광안내 영역 */
 .tour_info_wrap {
-  width: 86.9%;
   display: grid;
   grid-template-columns: 25%;
   grid-template-rows: 100%;
@@ -503,9 +502,6 @@ header {
 
 /* 축제 영역 */
 .fes_con {
-  padding: 0 7.2%;
-  box-sizing: border-box;
-  /* background: palegreen; */
   display: grid;
   grid-template-columns: 50%;
   grid-template-rows: 50%;
@@ -608,6 +604,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 30px 20px;
+  margin-top: 5.2vw;
 }
 footer .footerInwrap {
   width: 100%;
@@ -647,34 +644,25 @@ footer .footerInwrap .sns_wrap {
 @media all and (max-width: 1024px) {
   /* 헤더 영역 */
   header {
-    width: 100vw;
     justify-content: left;
     z-index: 999;
   }
   .main_logo {
     width: 200px;
-    height: 100%;
     padding-left: 2%;
     box-sizing: border-box;
     padding-top: 30px;
   }
   .menu_wrap {
     width: 64.4%;
-    height: 100%;
   }
   .main_menu_wrap {
     width: 90%;
-    height: 100%;
-    margin: 0 auto;
     line-height: 5.2vw;
   }
   .main_menu {
     width: 20%;
-    height: 100%;
-    text-align: center;
-    float: left;
     line-height: 100px;
-    font-weight: 600;
   }
   .main_menu:nth-child(1) {
     width: 16%;
@@ -692,13 +680,6 @@ footer .footerInwrap .sns_wrap {
     width: 21%;
   }
   /* 서브메뉴 영역 */
-  .sub_menu_wrap {
-    width: 100vw;
-    height: 0;
-    position: absolute;
-    left: 0;
-    overflow: hidden;
-  }
   .menu_wrap:hover .sub_menu_wrap {
     height: 100vh;
     transition-duration: 1s;
@@ -800,31 +781,10 @@ footer .footerInwrap .sns_wrap {
   }
   /* 배너 영역 */
   .banner {
-    width: 100vw;
     height: 41.7vw;
-    background: thistle;
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 7.8%;
-    background-image: url(../images/main.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0 100px;
   }
   .open_info_mo {
     display: none;
-  }
-  .open_info {
-    width: 20.8%;
-    height: 37.5%;
-    background: rgb(140, 176, 140);
-    position: absolute;
-    right: 4%;
-    bottom: -6%;
-    text-align: center;
-    color: white;
-    padding: 1.5%;
-    box-sizing: border-box;
   }
   .open_main_text {
     font-size: 0.9vw;
@@ -854,7 +814,6 @@ footer .footerInwrap .sns_wrap {
   }
   /* 섹션 영역 */
   .content_wrap {
-    width: 100vw;
     overflow: hidden;
   }
   .content {
@@ -915,7 +874,6 @@ footer .footerInwrap .sns_wrap {
     position: relative;
   }
   .info_content {
-    background: #c6e4ff;
     width: 100%;
   }
   .info_img_wrap {
@@ -947,43 +905,6 @@ footer .footerInwrap .sns_wrap {
   .ex_img_box {
     height: 40vw;
   }
-  .tour_info_wrap {
-    width: 86.9%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 25%;
-    grid-template-rows: 100%;
-    margin: 0 auto;
-  }
-  .tour_info {
-    /* border: 2px solid black;
-    box-sizing: border-box; */
-    position: relative;
-  }
-  .tour_info_1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .tour_info_2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .tour_info_3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .tour_info_4 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
   .ti_box_1 {
     width: 100%;
     height: 100%;
@@ -1000,48 +921,6 @@ footer .footerInwrap .sns_wrap {
   }
   .tour_info:hover .ti_box_2 {
     display: block;
-  }
-  .fes_con {
-    padding: 0 7.2%;
-    box-sizing: border-box;
-    /* background: palegreen; */
-    display: grid;
-    grid-template-columns: 50%;
-    grid-template-rows: 50%;
-  }
-  .fes {
-    /* border: 1px solid black;
-    box-sizing: border-box; */
-    margin: 1.4%;
-    overflow: hidden;
-  }
-  .fes img {
-    scale: 1.17;
-    margin-top: 12px;
-  }
-  .fes_1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .fes_2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .fes_3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .fes_4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
   }
   .swiper {
     width: 100%;
@@ -1091,7 +970,6 @@ footer .footerInwrap .sns_wrap {
 }
 @media all and (max-width: 1024px) {
   footer {
-    width: 100vw;
     border-top: 1px solid rgb(189, 189, 189);
     box-sizing: border-box;
     color: #999999;
@@ -1113,7 +991,7 @@ footer .footerInwrap .sns_wrap {
     filter: grayscale(1);
   }
   footer .footerInwrap .f_line_wrap {
-    width: calc(100% - 240px);
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
   }
@@ -1121,19 +999,15 @@ footer .footerInwrap .sns_wrap {
 @media all and (max-width: 768px) {
   /* 헤더 영역 */
   header {
-    width: 100vw;
     height: 80px;
   }
   .main_logo {
     width: 180px;
-    height: 100%;
-    /* padding: 1%; */
     padding-left: 2%;
+    padding-top: 20px;
     box-sizing: border-box;
     position: absolute;
     left: 4%;
-    padding-top: 20px;
-    box-sizing: border-box;
   }
   .menu_wrap {
     position: absolute;
@@ -1150,7 +1024,6 @@ footer .footerInwrap .sns_wrap {
   }
   /* 서브메뉴 영역 */
   .sub_menu_wrap {
-    width: 100vw;
     height: 0;
     position: absolute;
     left: 0;
@@ -1336,7 +1209,6 @@ footer .footerInwrap .sns_wrap {
   }
   /* 배너 영역 */
   .banner {
-    width: 100vw;
     height: 93vw;
     background: thistle;
     margin: 0 auto;
@@ -1362,7 +1234,6 @@ footer .footerInwrap .sns_wrap {
   }
   /* 섹션 영역 */
   .content_wrap {
-    width: 100vw;
     overflow: hidden;
   }
   .content {
@@ -1421,9 +1292,6 @@ footer .footerInwrap .sns_wrap {
     width: 100%;
     margin-top: 20px;
   }
-  .info_content {
-    background: #c6e4ff;
-  }
   .info_img_wrap {
     width: 50%;
     overflow: hidden;
@@ -1452,6 +1320,7 @@ footer .footerInwrap .sns_wrap {
     flex-flow: column;
     padding: 20px 10px 0 10px;
     box-sizing: border-box;
+    background-color: rgba(198, 228, 255, 0.9058823529);
   }
   .info_img_wrap {
     width: 100%;
@@ -1621,10 +1490,8 @@ footer .footerInwrap .sns_wrap {
 }
 @media all and (max-width: 768px) {
   footer {
-    width: 100vw;
     border-top: 1px solid rgb(189, 189, 189);
     box-sizing: border-box;
     color: #999999;
-    text-align: center;
   }
 }/*# sourceMappingURL=hb.css.map */

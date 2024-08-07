@@ -2,6 +2,7 @@
 var web = window.matchMedia("screen and (min-width : 768px)");
 
 if (web.matches){
+    document.querySelector('.remove_id').classList.remove('horizontal')
     const horizontal = document.querySelector("#horizontal");
     const sections = gsap.utils.toArray("#horizontal > section");
     
@@ -70,7 +71,7 @@ if (web.matches){
 
 
 const showAnim = gsap.from('header', { 
-yPercent: -220,
+yPercent: -220, // 수정을 위해 잠시 주석처리
 paused: true,
 duration: 0.2
 }).progress(1);
